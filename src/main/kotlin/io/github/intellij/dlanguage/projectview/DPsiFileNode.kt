@@ -47,7 +47,6 @@ class DPsiFileNode(project: Project?, dFilePsi: DlangFile, viewSettings: ViewSet
                     }
 
                 data.addText("$presentableModuleName   ", SimpleTextAttributes.REGULAR_ATTRIBUTES)
-                presentableFileName?.let { data.addText(ColoredFragment(it, SimpleTextAttributes.GRAYED_ATTRIBUTES)) }
             }
         }
     }
