@@ -56,7 +56,7 @@ public class DlangSdkType extends SdkType {
             // This covers the default paths used by the Windows installer and therefore
             // https://chocolatey.org/packages/dmd is also covered (as it uses same process).
             DEFAULT_DMD_PATHS = new File[] {
-                new File("C:/D/dmd2/windows/bin/dmd.exe")
+                new File("C:/Apps/DMD/dmd2/windows/bin64/dmd.exe")
             };
             DEFAULT_DOCUMENTATION_PATHS = new File[] {
                 new File("C:/D/dmd2/html/d")
