@@ -12,7 +12,7 @@ object DLanguage : Language("D") {
 
     class Icons {
         companion object {
-            @JvmField val FILE = IconLoader.getIcon("/icons/d.png", DLanguage::class.java)
+            @JvmField val FILE = IconLoader.getIcon("/icons/annotate.svg", DLanguage::class.java)
             @JvmField val MODULE = FILE
             @JvmField val SDK = FILE
             @JvmField val SDK_ADD = FILE
