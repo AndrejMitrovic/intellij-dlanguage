@@ -93,6 +93,24 @@ public class DlangFile extends PsiFileBase implements DlangPsiFile {
             })
             .orElseGet(() -> StringUtil.trimExtensions(super.getName()));
     }
+    /**
+     * D module names are, by default, the file name with the path and extension stripped off.
+     * They can be set explicitly with the module declaration.
+     * This method attempts to find an explicitly defined module declaration first and then return the filename (without extension)
+     * if no module declaration is found.
+     */
+    @NotNull
+    public String getModuleFileName() {
+        final Optional<String> moduleDeclaration = findModuleDeclaration();
+
+        return moduleDeclaration
+            .filter(StringUtil::isNotEmpty)
+            .map(fullDeclaration -> {
+                final String[] identifiers = fullDeclaration.split("\\.");
+                return identifiers[identifiers.length - 1] + ".d";
+            })
+            .orElseGet(() -> StringUtil.trimExtensions(super.getName()));
+    }
 
     @Nullable
     @Override

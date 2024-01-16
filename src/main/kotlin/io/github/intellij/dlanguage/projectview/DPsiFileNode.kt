@@ -38,7 +38,7 @@ class DPsiFileNode(project: Project?, dFilePsi: DlangFile, viewSettings: ViewSet
             if (fileName == "package") {
                 data.addText("package.${filePsi.virtualFile.extension}", SimpleTextAttributes.REGULAR_ATTRIBUTES)
             } else {
-                val presentableModuleName = filePsi.getModuleName()
+                val presentableModuleName = filePsi.getModuleFileName()
                 val presentableFileName: String? =
                     if (fileName != presentableModuleName) {
                         "$fileName.${filePsi.virtualFile.extension}"
