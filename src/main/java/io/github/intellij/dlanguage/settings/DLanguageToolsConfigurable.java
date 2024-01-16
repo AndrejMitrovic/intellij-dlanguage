@@ -521,7 +521,7 @@ public class DLanguageToolsConfigurable implements SearchableConfigurable {
         static {
             if (SystemInfo.isWindows) {
                 STANDARD_TOOL_PATHS = new Path[] {
-                    Paths.get("\\D\\dmd2\\windows\\bin")
+                    Paths.get("\\Apps\\DMD\\dmd2\\windows\\bin64")
                 };
             } else if (SystemInfo.isMac) {
                 STANDARD_TOOL_PATHS = new Path[] {
