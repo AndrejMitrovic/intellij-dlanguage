@@ -19,7 +19,7 @@ object DLanguage : Language("D") {
             @JvmField val RUN = FILE
             @JvmField val LIBRARY = FILE
 
-            @JvmField val SRC_FILE = IconLoader.getIcon("/icons/d-file.png", DLanguage::class.java)
+            @JvmField val SRC_FILE = IconLoader.getIcon("/icons/annotate.svg", DLanguage::class.java)
             @JvmField val SRC_FILE_RUNNABLE: Icon = LayeredIcon(SRC_FILE, AllIcons.Nodes.RunnableMark)
             @JvmField val SRC_FILE_PACKAGE = IconLoader.getIcon("/icons/d-file-package.png", DLanguage::class.java)
 
