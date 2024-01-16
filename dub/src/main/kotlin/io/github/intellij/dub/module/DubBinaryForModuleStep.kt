@@ -209,7 +209,7 @@ class DubBinaryForModuleStep(private val myWizardContext: WizardContext) : Modul
         init {
             if (SystemInfo.isWindows) {
                 STANDARD_DUB_EXE_PATHS = arrayOf(
-                    Paths.get("\\D\\dmd2\\windows\\bin\\dub.exe")
+                    Paths.get("\\Apps\\DMD\\dmd2\\windows\\bin64\\dub.exe")
                 )
             } else if (SystemInfo.isMac) {
                 STANDARD_DUB_EXE_PATHS = arrayOf(
